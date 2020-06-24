@@ -38,6 +38,10 @@ public class PersonController {
     @DeleteMapping(path = "{id}")
     public void deletePersonById(@PathVariable("id") UUID id){
         System.out.println("Hello world");
+        System.out.println("Hello world");
+        System.out.println("Hello world");
+        System.out.println("Hello world");
+        System.out.println("Hello world");
         personService.deletePerson(id);
     }
 
