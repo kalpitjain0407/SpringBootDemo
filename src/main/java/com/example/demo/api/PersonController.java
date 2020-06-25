@@ -36,7 +36,7 @@ public class PersonController {
     }
 
     @PutMapping(path = "{id}")
-    public void updatePersonById(@PathVariable("id") UUID id){
+    public void updatePersonByPersonId(@PathVariable("id") UUID id){
         personService.updatePerson(id, new Person(id, "name"));
     }
 
